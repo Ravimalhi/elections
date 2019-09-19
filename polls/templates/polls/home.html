@@ -1,0 +1,7 @@
+<h1 align="center">Your vote is important For Canada</h1>
+<form action="polls" method="POST" align="center">
+    {% csrf_token %}
+    <h4>Enter your Voter ID</h4>
+    <input type="text" name="ID">  <br><br>
+    <button type="submit">Submit</button>
+</form>

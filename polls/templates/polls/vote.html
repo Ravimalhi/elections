@@ -1,0 +1,12 @@
+<h1>You can now cast your vote:</h1>
+<form action="cast" method="POST" align="center">
+        {% csrf_token %}
+        <input type="radio" name="votecas" value="liberals"> Liberals<br>
+        <input type="radio" name="votecas" value="conservative"> Conservative<br>
+        <input type="radio" name="votecas" value="ndp"> NDP <br>
+        <input type="radio" name="votecas" value="green"> Green <br>
+        <input type="radio" name="votecas" value="bloc"> Bloc Québécois	<br>
+        <input type="radio" name="votecas" value="people"> People	<br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
